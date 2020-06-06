@@ -1,0 +1,8 @@
+---
+# 
+# Other Base Home Assistant Configurations
+#
+
+homeassistant:
+  # Include the customize.yaml file
+  customize: !include ../customize.yaml

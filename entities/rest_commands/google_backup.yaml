@@ -1,0 +1,10 @@
+---
+#
+# RESTful Command to trigger configuration Snapshots to be Backed up to Google Drive
+#
+# https://github.com/samccauley/addon-hassiogooglebackup/
+#
+
+google_backup:
+  url: !secret google_backup_url
+  timeout: '300'

@@ -1,0 +1,9 @@
+---
+#
+# https://www.home-assistant.io/integrations/speedtestdotnet
+#
+
+speedtestdotnet:
+  server_id: !secret speedtestdotnet_server_id
+  scan_interval:
+    minutes: 15

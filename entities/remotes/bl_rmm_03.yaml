@@ -1,0 +1,13 @@
+---
+#
+# Model: RM Mini 3
+# Location: Office
+#
+# https://www.home-assistant.io/integrations/broadlink
+#
+
+platform: broadlink
+name: Office
+host: !secret broadlink_remote_ip_address_3
+mac: !secret broadlink_remote_mac_address_3
+type: rm_mini

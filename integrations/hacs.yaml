@@ -1,0 +1,7 @@
+---
+#
+# https://hacs.xyz/docs/configuration/legacy
+#
+
+hacs:
+  token: !secret hacs_token

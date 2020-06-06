@@ -1,0 +1,15 @@
+---
+# This template is for configuration of a 
+# Broadlink Infrared Controller
+#
+# Model: RM Mini 3
+# Location: Room
+#
+# https://www.home-assistant.io/integrations/broadlink
+#
+
+platform: broadlink
+name: Remote
+host: !secret broadlink_remote_ip_address
+mac: !secret broadlink_remote_mac_address
+type: rm_mini

@@ -1,0 +1,6 @@
+---
+#
+# https://www.home-assistant.io/integrations/vacuum
+#
+
+vacuum: !include_dir_list ../entities/vacuum

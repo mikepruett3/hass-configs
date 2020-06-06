@@ -1,0 +1,48 @@
+---
+#
+# https://www.home-assistant.io/lovelace/
+# https://www.home-assistant.io/lovelace/yaml-mode/
+#
+
+lovelace:
+  mode: yaml
+  resources:
+  ## auto-entities
+  - url: /hacsfiles/lovelace-auto-entities/auto-entities.js
+    type: module
+
+  ## bar-card
+  - url: /hacsfiles/bar-card/bar-card.js
+    type: module
+
+  ## button-card
+  - url: /hacsfiles/button-card/button-card.js
+    type: module
+
+  ## calendar-card
+  - url: /hacsfiles/calendar-card/calendar-card.js
+    type: js
+
+  ## card-mod
+  - url: /hacsfiles/lovelace-card-mod/card-mod.js
+    type: module
+
+  ## custom-header
+  - url: /hacsfiles/custom-header/custom-header.js
+    type: module
+
+  ## mini-graph-card
+  - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
+    type: module
+
+  ## mini-media-player
+  - url: /hacsfiles/mini-media-player/mini-media-player-bundle.js
+    type: module
+
+  ## vertical-stack-in-card
+  - url: /hacsfiles/vertical-stack-in-card/vertical-stack-in-card.js
+    type: js
+
+  ## weather-card
+  - url: /hacsfiles/weather-card/weather-card.js
+    type: module

@@ -1,0 +1,13 @@
+---
+#
+# Model: RM Mini 3
+# Location: Master Bedroom
+#
+# https://www.home-assistant.io/integrations/broadlink
+#
+
+platform: broadlink
+name: Master Bedroom
+host: !secret broadlink_remote_ip_address_2
+mac: !secret broadlink_remote_mac_address_2
+type: rm_mini

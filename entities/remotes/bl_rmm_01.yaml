@@ -1,0 +1,13 @@
+---
+#
+# Model: RM Mini 3
+# Location: Living Room
+#
+# https://www.home-assistant.io/integrations/broadlink
+#
+
+platform: broadlink
+name: Living Room
+host: !secret broadlink_remote_ip_address_1
+mac: !secret broadlink_remote_mac_address_1
+type: rm_mini

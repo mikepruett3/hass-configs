@@ -1,0 +1,31 @@
+---
+#
+# https://www.home-assistant.io/integrations/http
+#
+
+http:
+  # Contains the URL that Home Assistant is available on the internet.
+  base_url: !secret http_base_url
+
+  # Enable parsing of the X-Forwarded-For header, passing on the client’s
+  # correct IP address in proxied setups. You must also whitelist trusted
+  # proxies using the trusted_proxies setting for this to work.
+  # Non-whitelisted requests with this header will be considered IP
+  # spoofing attacks, and the header will, therefore, be ignored.
+  use_x_forwarded_for: true
+
+  # List of trusted proxies, consisting of IP addresses or networks, that
+  # are allowed to set the X-Forwarded-For header. This is required when
+  # using use_x_forwarded_for because all requests to Home Assistant,
+  # regardless of source, will arrive from the reverse proxy IP address.
+  # Therefore in a reverse proxy scenario, this option should be set with
+  # extreme care..
+  trusted_proxies: !secret http_trusted_proxies
+
+  # Flag indicating whether additional IP filtering is enabled.
+  ip_ban_enabled: false
+
+  # Number of failed login attempt from single IP after which it will be
+  # automatically banned if ip_ban_enabled is true. When set to -1 no
+  # new automatic bans will be added.
+  login_attempts_threshold: 5

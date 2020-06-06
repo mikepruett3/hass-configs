@@ -1,0 +1,6 @@
+---
+#
+# https://www.home-assistant.io/integrations/fan.template/
+#
+
+fan: !include_dir_list ../entities/fans

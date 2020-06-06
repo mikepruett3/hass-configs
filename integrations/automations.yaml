@@ -1,0 +1,8 @@
+---
+#
+# https://www.home-assistant.io/docs/automation
+# https://www.home-assistant.io/integrations/automation
+#
+
+automation: !include ../automations.yaml
+automation split: !include_dir_list ../automations

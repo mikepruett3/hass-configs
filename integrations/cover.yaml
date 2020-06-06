@@ -1,0 +1,7 @@
+---
+#
+# https://www.home-assistant.io/integrations/cover
+# https://www.home-assistant.io/integrations/cover.mqtt
+#
+
+cover: !include_dir_list ../entities/covers

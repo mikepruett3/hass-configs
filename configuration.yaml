@@ -1,0 +1,17 @@
+#
+# Base Home Assistant Configuration file
+#
+
+homeassistant:
+  name: !secret location_name
+  latitude: !secret location_latitude
+  longitude: !secret location_longitude
+  elevation: !secret location_elevation
+  unit_system: imperial
+  time_zone: !secret location_time_zone
+
+  whitelist_external_dirs:
+    - /config
+
+  # Load Integrations
+  packages: !include_dir_named integrations
